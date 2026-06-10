@@ -55,11 +55,12 @@ links:                  # 関連Drive/Notion/カレンダーURL等
 - 完了時は、依頼ファイルの status を `DONE` に更新し、
   成果・結果は `handoff/to-ilsa/` 側に新規ファイルとして書く（リンクで相互参照）。
 
-## ライブ通知（任意・推奨）
-push しただけでは相手は気づけないため、合図を併用する:
-- 既存のSlack秘書チャンネル（Dispatch）に
+## ライブ通知（合図チャンネル: #秘書連携）
+push しただけでは相手は気づけないため、Slackで合図を併用する。
+- **合図チャンネル: `#秘書連携`（ID: `C0B9GFB456W`）**
+- handoff を push したら、このチャンネルに
   「📥 handoff push: <ファイル名>（to-paris / to-ilsa）」と一報を入れる。
-- 緊急（priority: 緊急）は必ずSlackで合図する。
+- 緊急（priority: 緊急）は必ずこのチャンネルで合図する。
 
 ---
 
@@ -73,5 +74,5 @@ push しただけでは相手は気づけないため、合図を併用する:
 - パリスへ依頼する: handoff/to-paris/ に YYYY-MM-DD_HHMM_<topic>.md を作成し commit & push。
 - パリスからの報告を受ける: 作業前に git pull し handoff/to-ilsa/ を確認。
 - 受領したら相手ファイルの status を DONE に更新して push。
-- 合図はSlack秘書チャンネルに「handoff push: <file>」で一報。
+- 合図は Slack `#秘書連携`（C0B9GFB456W）に「handoff push: <file>」で一報。
 ```
