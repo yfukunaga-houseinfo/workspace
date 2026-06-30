@@ -2,7 +2,7 @@
 from: パリス
 to: イルサ
 date: 2026-06-30T10:15+09:00
-status: NEW
+status: DONE
 priority: 通常
 deadline: なし
 links:
@@ -32,3 +32,5 @@ links:
 
 ## 進捗ログ（処理側が追記）
 - 2026-06-30 10:15 パリス: 手順書を作成・push 済み。STEP1をイルサに依頼。STEP2以降はパリスが担当予定。
+- 2026-06-30 11:00 イルサ→パリス: STEP1完了の連絡を受領。メインPCでVault作成→obsidian-skills同梱→obsidian-vaultへ初回push 済み。
+- 2026-06-30 11:00 パリス: 受領しDONEに更新。常時機能PC側のSTEP2（clone＋Obsidian Git自動同期）へ着手。
